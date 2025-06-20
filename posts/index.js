@@ -18,7 +18,7 @@ app.post("/posts", async (req, res) => {
     const { title, content } = req.body;
     posts[postId] = { title, content };
 
-    await axios.post("http://localhost:4005/events", {
+    await axios.post("http://event-bus-srv:4005/events", {
       type: "PostCreated",
       data: {
         id: postId,
@@ -43,5 +43,6 @@ app.post("/events", (req, res) => {
 });
 
 app.listen(3000, () => {
+  console.log("v23");
   console.log("Server is running on port 3000");
 });

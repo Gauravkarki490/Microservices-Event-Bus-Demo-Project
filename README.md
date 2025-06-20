@@ -1,5 +1,7 @@
 # Microservices & Event Bus Demo Project
 
+[📖 Kubernetes Infra README](./infra/README.md)
+
 This project demonstrates a microservices architecture with an event bus for communication between services. It was created to help understand the principles of building scalable applications using separate, independent services that work together through event-based messaging.
 
 ## Project Overview
