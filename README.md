@@ -59,6 +59,8 @@ flowchart TD
     B -->|Events| E[Event Bus]
     C -->|Events| E
     D -->|Events| E
+    E -->|Events| Cc
+    
     
     E -->|Events| F[Moderation Service]
     E -->|Events| D
