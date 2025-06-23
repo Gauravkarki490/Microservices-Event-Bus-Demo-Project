@@ -10,7 +10,7 @@ const CommentCreate = ({id}) => {
         e.preventDefault()
         console.log("Submitting comment:", comment)
         try {
-            let res = await axios.post(`http://localhost:32628/posts/${id}/comments`, {
+            let res = await axios.post(`http://posts.com/posts/${id}/comments`, {
                 content: comment
             })
             if (res.status === 201) {

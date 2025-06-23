@@ -9,6 +9,7 @@ function App() {
 
   return (
     <div className='container mx-auto '>
+      <h1>Hey</h1>
      <PostCreate/>
      <PostList/>
     </div>

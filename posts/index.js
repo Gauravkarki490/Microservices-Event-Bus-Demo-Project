@@ -12,7 +12,7 @@ const posts = {};
 app.get("/posts", (req, res) => {
   res.json(posts);
 });
-app.post("/posts", async (req, res) => {
+app.post("/posts/create", async (req, res) => {
   try {
     const postId = randomBytes(4).toString("hex"); // Generate a random ID for the post
     const { title, content } = req.body;
